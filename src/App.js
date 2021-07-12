@@ -4,21 +4,29 @@ import Loader from "react-loader-spinner";
 class App extends Component {
   state = {
     advice: "",
-    load: true,
+
   };
 
-  componentDidMount = () => {
+  componentDidMount = async  () => {
+
     this.getAdvice();
   };
 
   getAdvice = async () => {
-    this.setState({ advice: "", load: true });
-
+    this.setState({ load: true });
     await fetch("https://api.adviceslip.com/advice")
       .then((response) => response.json())
-      .then((data) => this.setState({ advice: data.slip.advice, load: false }));
+      .then((data) => {
+        if (data.slip.advice === this.state.advice) {
+          this.getAdvice();
+        } else {
+           this.setState({ advice: data.slip.advice, load: false})} 
+        }
+      );
+    
   };
 
+  
   render() {
     return (
       <div className="header">
@@ -30,7 +38,7 @@ class App extends Component {
           {!this.state.load ? (
             "Generate"
           ) : (
-            <Loader type="ThreeDots" color="white" height={20} width={50} />
+            <Loader type="circle" color="white" height={20} width={50} />
           )}
         </button>
       </div>

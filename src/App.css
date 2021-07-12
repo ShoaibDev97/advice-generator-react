@@ -1,95 +1,45 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:400, 300");
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: 0;
-  overflow: hidden;
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
 }
-body {
-  background-color: rgb(238, 220, 220);
-}
-.header {
-  margin-top: 130px;
-  width: 100%;
+.header{
   height: 100vh;
-  text-align: center;
+  width: 100vw;
+  background: linear-gradient(rgba(21, 21, 21, 0.9),rgba(0, 0, 0, 0.9)),
+  url('./leaf.jpg') no-repeat center center fixed;
 }
-.card {
-  z-index: -1;
-  margin: auto;
-  width: 500px;
-  height: 50vh;
-  padding: 10px;
-  border: 1px solid #ddd;
-  background-size: cover;
-  background-clip: content-box;
-  background-color: #f66f6f;
-  box-sizing: border-box;
-  position: relative;
-  margin: auto;
-  top: 30px;
-  padding: 20px;
-  font: 2.2rem "Oswald", sans-serif;
-  color: #fbfbfb;
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
 }
-p {
-  font-size: 1.8rem;
-}
-.card:after {
-  content: "";
-  display: block;
-  position: absolute;
-  border: 50px solid transparent;
-  border-bottom: 50px solid #fefefe;
-  bottom: -60px;
-  right: -65px;
-  box-shadow: 0px 7px 6px -9px black;
-  transform: rotate(135deg);
+.header p{
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;  
+  text-transform: capitalize;
+  font-family: "Roboto Condensed";
+  text-align:center ;
 }
 
-.card:before {
-  content: "";
-  display: block;
-  position: absolute;
-  border: 50px solid transparent;
-  border-top: 50px solid #fefefe;
-  top: -60px;
-  left: -65px;
-  box-shadow: 0px -7px 6px -9px black;
-  transform: rotate(135deg);
-}
-
-@media (max-width: 576px) {
-  .card {
-    width: 400px;
-  }
-}
-
-@media (max-width: 426px) {
-  .card {
-    width: 350px;
-  }
-  p {
-    font-size: 1.8rem;
-  }
-}
-
-.btn {
-  font-size: 18px;
-  padding: 16px 24px;
-  background: transparent;
-  background-color: #f66f6f;
+.header button{
+  margin-top: 30px;
+  padding: 12px 24px;
   border: none;
-  top: 50;
-  font-weight: 700;
-  color: rgb(80, 7, 19);
+  /* background-color: teal; */
+  color: teal;
+  font-family: "Roboto Condensed";
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid teal;
   transition: 0.5s ease-in-out;
-  border-bottom: 1px solid rgb(192, 100, 115);
-}
 
-.btn:hover {
-  transform: scale(1.1);
-  border: 1px solid black;
-  outline: 0;
+}
+.header button:hover{
+  color: white;
+  border: 2px solid white;
 }

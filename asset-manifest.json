@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/advice-generator-react/static/css/main.61f31cd1.chunk.css",
+    "main.js": "/advice-generator-react/static/js/main.0fe548eb.chunk.js",
+    "main.js.map": "/advice-generator-react/static/js/main.0fe548eb.chunk.js.map",
+    "runtime-main.js": "/advice-generator-react/static/js/runtime-main.c7c35d33.js",
+    "runtime-main.js.map": "/advice-generator-react/static/js/runtime-main.c7c35d33.js.map",
+    "static/js/2.b69492b2.chunk.js": "/advice-generator-react/static/js/2.b69492b2.chunk.js",
+    "static/js/2.b69492b2.chunk.js.map": "/advice-generator-react/static/js/2.b69492b2.chunk.js.map",
+    "index.html": "/advice-generator-react/index.html",
+    "precache-manifest.18ca5746efbd38a1e1ce0f0670698537.js": "/advice-generator-react/precache-manifest.18ca5746efbd38a1e1ce0f0670698537.js",
+    "service-worker.js": "/advice-generator-react/service-worker.js",
+    "static/css/main.61f31cd1.chunk.css.map": "/advice-generator-react/static/css/main.61f31cd1.chunk.css.map",
+    "static/js/2.b69492b2.chunk.js.LICENSE.txt": "/advice-generator-react/static/js/2.b69492b2.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/advice-generator-react/static/media/leaf.7423684f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c7c35d33.js",
+    "static/js/2.b69492b2.chunk.js",
+    "static/css/main.61f31cd1.chunk.css",
+    "static/js/main.0fe548eb.chunk.js"
+  ]
+}
